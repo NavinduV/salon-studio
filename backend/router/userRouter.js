@@ -18,11 +18,12 @@ const router = express.Router();
 
 router.post("/user/register", register);
 router.post("/login", login);
-router.post("/admin/addnew", isAdminAuthenticated, addNewAdmin);
-router.post("/artist/addnew", isAdminAuthenticated, addNewArtist);
-router.get("/artists", getAllArtists);
-router.get("/user/me", isUserAuthenticated, getUserDetails);
-router.get("/admin/me", isAdminAuthenticated, getUserDetails);
+router.post("/admin/add", isAdminAuthenticated, addNewAdmin);
+router.get('/artists', getAllArtists);
+router.get('/user/me', isUserAuthenticated, getUserDetails);
+router.get('/admin/me', isAdminAuthenticated, getUserDetails);
+
+router.post("/artist/add", isAdminAuthenticated, addNewArtist);
 router.get("/user/logout", isUserAuthenticated, logout);
 router.get("/admin/logout", isAdminAuthenticated, logoutAdmin);
 
