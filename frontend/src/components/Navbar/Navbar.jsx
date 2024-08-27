@@ -37,8 +37,11 @@ const Navbar = () => {
           <img src="/logo.png" alt="logo" className="logo-img" />
         </div>
         <div className={show ? 'navLinks showmenu' : 'navLinks'}>
-          <div className={show ? 'close-btn .hide' : '. close-btn .show'} onClick={() => setShow(!show)}>
-            <MdClose color='white'/>
+          <div
+            className={show ? 'close-btn .hide' : '. close-btn .show'}
+            onClick={() => setShow(!show)}
+          >
+            <MdClose color="white" />
           </div>
 
           <div className="links">
@@ -54,11 +57,14 @@ const Navbar = () => {
           </div>
           <div className="btn-section">
             {isAuthenticated ? (
-              <button className="logoutBtn btn" onClick={handleLogout}>
+              <button
+                className="btn btn-darken btn-inline"
+                onClick={handleLogout}
+              >
                 LOGOUT
               </button>
             ) : (
-              <button className="loginBtn btn" onClick={goToLogin}>
+              <button className="btn btn-darken btn-inline" onClick={goToLogin}>
                 Sign In
               </button>
             )}

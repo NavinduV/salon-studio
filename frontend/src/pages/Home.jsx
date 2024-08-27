@@ -6,9 +6,7 @@ import Footer from "../components/Footer/Footer"
 const Home = () => {
   return (
     <>
-      <Hero
-        imageUrl={"/hero.png"}
-      />
+      <Hero />
       
       <MessageForm />
       <Footer />

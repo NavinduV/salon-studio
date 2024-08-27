@@ -20,6 +20,7 @@ nav {
   padding-bottom: 20px !important;
   z-index: 2;
   background: #eee;
+  overflow-y: hidden;
 }
 nav .logo {
   flex: 1;
@@ -29,8 +30,10 @@ nav .logo {
 }
 
 nav .logo img {
-    width: 50px;
-    height: 50px;
+  margin-top: 10px;
+  width: 80px;
+  height: 80px;
+  object-fit: fill;
 }
 
 nav .navLinks {
@@ -59,7 +62,6 @@ nav .navLinks .links a {
   text-decoration: none;
   color: #222;
   font-size: 20px;
-  font-weight: 600;
   letter-spacing: 1.4px;
 }
 
@@ -68,16 +70,7 @@ nav .navLinks .links a:hover {
   transition: 0.3s;
   cursor: pointer;
 }
-nav .btn {
-  padding: 8px 20px;
-  color: #e5e5e5;
-  background: transparent;
-  border: none;
-  border-radius: 20px;
-  font-size: 20px;
-  font-weight: 600;
-  z-index: 2;
-}
+
 
 nav .logoutBtn {
   background: linear-gradient(135deg, black, rgb(49, 49, 49));
