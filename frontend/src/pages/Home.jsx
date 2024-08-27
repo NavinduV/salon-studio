@@ -7,7 +7,6 @@ const Home = () => {
   return (
     <>
       <Hero />
-      
       <MessageForm />
       <Footer />
     </>
